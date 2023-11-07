@@ -46,12 +46,13 @@
     .sampleBg  {background-image: url('images/example.png' ); height: 320px;  background-repeat: no-repeat; background-size: cover;  background-position: top center; }
     .number {display:none;text-align: right; background: rgba(0,0,0,.9); font-size: 20px; color:white; padding:15px; position: fixed; z-index: 9999; bottom:0px; left:0px; right:0px;}
     .number a {color:#fff!important; font-weight: bold;}
-    .logoContainer {padding: 10px 0px 0px 15px;}
+    .logoContainer {padding: 20px 0px 0px 15px;}
+    .logoContainer a {font-size:30px;}
     .logo {height:40px; cursor: pointer; position: relative;}
     
     .mainImage {max-width: 100%; margin:30px 0px 0px 0px;}
-    .blurb {padding:20px 30px 0px; font-size: 32px; font-weight: bold; line-height: 1.4; max-width:1480px; margin: auto;position: relative; }
-     .blurb  h1 {}
+    .blurb {padding:20px 30px 0px; text-align: center; font-size: 32px; font-weight: bold; line-height: 1.4; max-width:1480px; margin:50px auto 0px;position: relative; }
+     .blurb  h1 {font-size:32px;}
     .blurb  img {max-width: 100%; margin: 30px 0px  0px 0px;}
 body {
     font-family: 'Montserrat', sans-serif;
@@ -193,7 +194,7 @@ input[type=checkbox]:checked ~ label .line-3 {
                 .steps { color:#fff; list-style: none; text-align: center; margin-top: -65px; vertical-align: top;}
         .steps h2 {font-size: 32px;margin:0px 0px 10px;}
         .steps li {padding-bottom: 50px;font-size: 20px;}
-    .steps span {margin-top:5px; border:1px solid #ccc; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-sizing: border-box;font-size:32px;background:  #666;line-height: 30px; color:white; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
+    .steps span {margin-top:5px; border:1px solid var(--primary); -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-sizing: border-box;font-size:32px;background:  #FFF;line-height: 30px; color:var(--primary); padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
         .steps span:hover {margin-top: -10px; background: #999;}
         .quoteContainer  {padding: 10px; margin-top: 60px;}
           .quote img {max-width: 150px;}
@@ -214,7 +215,7 @@ input[type=checkbox]:checked ~ label .line-3 {
     z-index: -1;
 }
        
-    .ourClients {text-align: center;padding-top:50px; background: white;}
+    .ourClients {text-align: center; background: white;}
     .ourClients  ul {list-style: none;}
     .ourClients li {margin:30px 0px; vertical-align: middle;}
     .ourClients img {max-width: 180px}
@@ -223,15 +224,16 @@ input[type=checkbox]:checked ~ label .line-3 {
         .blogContainer h1  {margin: 30px 0px 30px  0px;}
 
 @media (min-width: 1025px) {
-    .blurb {padding:30px 0px 0px 60px;max-width:47%; vertical-align: top; margin: auto;  display: inline-block}
+    .blurb {padding:30px 0px 0px 60px;max-width:900px; vertical-align: top; margin: 100px auto;}
     .blurb h1 {font-size: 42px;}
+  
      }
 @media (min-width: 1025px) {
     .quoteContainer {border-radius: 200px 0px 0px 0px;}
     hr {margin: 80px -150px;}
     .blogContainer img  {width: 900px; min-width: 900px; margin: 20px -150px}
     .blogContainer  h1 {font-size: 62px;margin: 30px -150px; text-align: center;}
-    .ourClients {padding: 80px 50px;  margin: -100px 100px 0px; border-radius: 100px;-webkit-box-shadow: 0px 0px 0px 20px rgba(0,0,0,.05); box-shadow: 0px 0px 0px 20px rgba(0,0,0,.05);}
+    .ourClients {padding: 0px 50px;  margin: 0px 0px; border-radius: 0px;}
     .ourClients li {display: inline-block; padding: 25px;margin:0px 10px 0px; }
     .ourClients h2 {margin-bottom:50px;}
     .quote {margin: 160px auto; line-height: 42px;font-size: 32px;}
@@ -242,7 +244,7 @@ color: #333;
 
 }
     .topContent {margin: auto; max-width: 1400px;}
-    .blurb {padding:60px 30px 0px 100px;}
+    .blurb {padding:0px;}
     .blurb h1 {font-size: 62px;}
     .blurb h1:hover {margin-top: -0px;}
     .mainImage {max-width: 52%;  display: inline-block;  margin: 30px 0px 20px 0px; }
@@ -260,12 +262,11 @@ color: #333;
   .header__title {
     font-size: 52px; max-width: 1280px; margin: auto;
   }
-    .stepsContainer {margin: 0px; border-radius: 0px 200px 0px 0px}
+    .stepsContainer {margin: 100px 0px; border-radius: 0px 200px 0px 0px}
     .steps {max-width: 1200px;margin:-60px  auto 60px;}
     .steps h2 {margin: 10px 0px 20px; color:white;}
     .steps li {display: inline-block; max-width: 28%; padding: 0px 60px; }
     .steps h2:hover, .steps p:hover {margin-top: -10px;}
-    .ctaTwo {margin-top: 50px;}
    
 }
 
@@ -278,7 +279,7 @@ color: #333;
   height: 100px;
   background: rgba(255, 0, 115, 0.5);
   top: 0px;
-  left: 0px;
+  left: 0px; 
   -webkit-animation: squiggle-one 16s linear infinite;
           animation: squiggle-one 16s linear infinite;
 }
@@ -340,6 +341,7 @@ color: #333;
 }
 @media (min-width: 960px) {
     .blurb h1 {font-size: 62px;}
+    .ctaTwo {margin-top: 50px;}
   .header__shape.circle--green {
     -webkit-animation: squiggle-three-large 20s linear infinite;
             animation: squiggle-three-large 20s linear infinite;
@@ -363,7 +365,7 @@ color: #333;
   }
 }
 @media (min-width: 960px) {
-    .ctaOne{display: block; position: absolute; top: 20px; right:70px; font-size: 16px;}
+    .ctaOne{display: block; position: absolute; top: 20px; right:70px; font-size: 16px; font-weight: bold;}
   .header__shape.trap--yellow {
     -webkit-animation: squiggle-four-large 23s linear infinite;
             animation: squiggle-four-large 23s linear infinite;
@@ -397,8 +399,6 @@ color: #333;
   border-bottom: none;
 }
 
-
-}
     </STYLE>
      
   </head>
@@ -421,14 +421,14 @@ color: #333;
 </div>
 <div class="page-content">
   <!--<h1 class="logo">Your Company Logo</h1> <div class="phone">1.555.5555</p></div>-->
-    <div class="logoContainer"><a href="{{ site.baseurl }}/"><img class="logo" src="/designco/images/themes/logo.svg"></a>  </div>
+    <div class="logoContainer"><a href="{{ site.baseurl }}/">gandalf</div>
 </div>
 
 
     
     
     
-    <a class="cta ctaOne" href="">Contact Us</a>
+    <a class="cta ctaOne" href="">Book a Call</a>
 
     
      {{ content }}
